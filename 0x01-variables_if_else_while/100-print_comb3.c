@@ -7,31 +7,26 @@
  */
 int main(void)
 {
-int i = '0';
-int j = '0';
-while (i <= '9')
+int n, m;
+for (n = 48; n <= 56; n++)
 {
-while (j <= '9')
+for (m = 49; m <= 57; m++)
 {
-if (!(j > j) || i == j)
+if (m > n)
 {
-putchar(i);
-putchar(j);
-if (i == '8' && j == '9')
-{
-putchar('\n');
-}
-else
+putchar(n);
+putchar(m);
+if (n != 56 || m != 57)
 {
 putchar(',');
 putchar(' ');
 }
 
 }
-j++;
+
 }
-j = '0';
-i++;
+
 }
+putchar('\n');
 return (0);
 }
