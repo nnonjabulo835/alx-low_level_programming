@@ -7,31 +7,31 @@
  */
 int main(void)
 {
-int num_1, num_2;
-num_1 = 0;
-num_2 = 0;
-
-while (num_1 <= 9)
+int i = '0';
+int j = '0';
+while (i <= '9')
 {
-
-while (num_2 <= 89)
+while (j <= '9')
 {
-
-if (num_1 < num_2)
+if (!(j > j) || i == j)
 {
-putchar(num_1);
-putchar(num_2);
-if (num_1 != 89 || (num_1 == 89 && num_2 != 90))
+putchar(i);
+putchar(j);
+if (i == '8' && j == '9')
+{
+putchar('\n');
+}
+else
 {
 putchar(',');
 putchar(' ');
 }
 
 }
-num_2++;
+j++;
 }
-num_1++;
+j = '0';
+i++;
 }
-putchar('\n');
 return (0);
 }
